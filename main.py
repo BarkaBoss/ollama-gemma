@@ -19,7 +19,7 @@ async def on_chat_start():
     # Wait for the user to upload a file
     while files is None:
         files = await cl.AskFileMessage(
-            content="Please upload a pdf file to begin!",
+            content="Upload a pdf file to teach Ajasco",
             accept=["application/pdf"],
             max_size_mb=100,  # Optionally limit the file size
             timeout=180,  # Set a timeout for user response,
